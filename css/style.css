@@ -37,7 +37,7 @@ h1 {
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   min-height: 300px;
 }
 
@@ -64,14 +64,10 @@ h2 {
   outline: none;
 }
 
-.btn:hover {
-  background-color: white;
-  color: black;
-}
-
 .fact-text {
   font-size: 24px;
   line-height: 47px;
+  margin-top: 20px;
 }
 
 .image-container {
@@ -95,7 +91,16 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
   .image-container {
     max-width: 50%;
+  }
+  .fact-text {
+    font-size: 34px;
+    max-width: 80%;
+    margin: 30px auto 0px auto;
   }
 }
