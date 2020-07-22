@@ -1,5 +1,6 @@
 let imageButton = document.querySelector(".btn-image");
-let bg = document.querySelector(".bg-image");
+let imageContainer = document.querySelector(".image-container");
+let catImage = document.querySelector(".cat-image");
 imageButton.addEventListener("click", getCatImage);
 
 function getCatImage() {
@@ -11,9 +12,7 @@ function getCatImage() {
 }
 
 function displayImage(response) {
-  bg.style.width = `${response[0].width}px`;
-  bg.style.height = `${response[0].height}px`;
-  bg.style.background = `url(${response[0].url}) no-repeat center`;
+  catImage.src = response[0].url;
 }
 
 getCatImage();
